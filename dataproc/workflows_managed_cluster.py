@@ -26,11 +26,11 @@ def instantiate_inline_workflow_managed_cluster(project_id, region):
     for a Cloud Dataproc using the Python client library.
 
        Args:
-           project_id (string): Project to use for creating resources.
-           region (string): Region where the resources should live.
+           project_id (string): Project to use for running the workflow.
+           region (string): Region where the workflow resources should live.
     """
 
-    # Create a client with the endpoint set to the desired cluster region.
+    # Create a client with the endpoint set to the desired region.
     workflow_client = dataproc.WorkflowTemplateServiceClient(
         client_options={'api_endpoint': '{}-dataproc.googleapis.com:443'.format(region)}
     )
