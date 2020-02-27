@@ -22,13 +22,12 @@ from google.cloud import dataproc_v1 as dataproc
 
 
 def instantiate_inline_workflow_autozone(project_id, region):
-    """This sample walks a user through submitting a workflow for a Cloud Dataproc 
-       using the Python client library.
+    """This sample walks a user through submitting a workflow using autozone 
+       for a Cloud Dataproc using the Python client library.
 
        Args:
            project_id (string): Project to use for creating resources.
            region (string): Region where the resources should live.
-           cluster_name (string): Name to use for creating a cluster.
     """
 
     # Create a client with the endpoint set to the desired cluster region.
