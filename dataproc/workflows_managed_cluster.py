@@ -21,7 +21,7 @@
 from google.cloud import dataproc_v1 as dataproc
 
 
-def instantiate_inline_workflow(project_id, region):
+def instantiate_inline_workflow_managed_cluster(project_id, region):
     """This sample walks a user through submitting a workflow for a Cloud Dataproc 
        using the Python client library.
 
